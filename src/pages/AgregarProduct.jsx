@@ -1,6 +1,6 @@
 import API_URL from "../config";
 import React, { useRef, useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+
 import { Sidebar, Navbar } from "../components";
 import toast from "react-hot-toast";
 
@@ -20,7 +20,7 @@ export const AgregarProduct = () => {
     const Package = useRef(null);
     const [categories, setCategories] = useState([]);
 
-    const navigate = useNavigate();
+   
 
     useEffect(() => {
         const fetchCategories = async () => {
@@ -64,7 +64,7 @@ export const AgregarProduct = () => {
             body: JSON.stringify(productData),
         })
             .then((response) => {
-                if (response.status == 200) {
+                if (response.status === 200) {
                     toast.success("Producto creado");
                     //navigate("/login");
                     return response.json();

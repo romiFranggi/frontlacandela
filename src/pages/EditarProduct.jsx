@@ -1,4 +1,4 @@
-//import ListaProducts from "./ListaProducts";
+
 import API_URL from "../config";
 import React, { useRef, useEffect, useState } from "react";
 import { Navbar, Sidebar } from "../components";
@@ -279,7 +279,7 @@ const EditarProduct = () => {
                                         <label htmlFor="alaventa" className="form-label">¿A la venta?</label>
                                         <input 
                                             type="checkbox" 
-                                            //className="form-check-input"
+                                            
                                             id="alaventa" 
                                             ref={ALaVenta} 
                                             defaultChecked={product.ALaVenta}
