@@ -1,4 +1,4 @@
-import ListaProducts from "./ListaProducts";
+//import ListaProducts from "./ListaProducts";
 import API_URL from "../config";
 import React, { useRef, useEffect, useState } from "react";
 import { Navbar, Sidebar } from "../components";

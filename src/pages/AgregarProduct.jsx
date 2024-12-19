@@ -1,6 +1,6 @@
 import API_URL from "../config";
 import React, { useRef, useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Sidebar, Navbar } from "../components";
 import toast from "react-hot-toast";
 

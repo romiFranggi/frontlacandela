@@ -14,7 +14,7 @@ import ReactPaginate from "react-paginate";
 export const ListaProducts = () => {
     const navigate = useNavigate();
     const [products, setProducts] = useState([]);
-    const [categories, setCategories] = useState([]);
+    //const [categories, setCategories] = useState([]);
     const [loading, setLoading] = useState(false);
     const [currentPage, setCurrentPage] = useState(0);
 
